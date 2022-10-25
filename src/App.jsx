@@ -1,3 +1,4 @@
+import { QuartaAula } from './lessons/QuartaAula';
 import { SegundaAula } from './lessons/SegundaAula';
 import { TerceiraAula } from './lessons/TerceiraAula';
 import { Login } from './pages/Login';
@@ -8,7 +9,8 @@ function App() {
     <>
       {/* <Login /> */}
       {/* <SegundaAula /> */}
-      <TerceiraAula />
+      {/* <TerceiraAula /> */}
+      <QuartaAula />
     </>
   )
 

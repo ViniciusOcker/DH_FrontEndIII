@@ -1,0 +1,29 @@
+.quarta-aula-component{
+    
+    * {
+        color: #00ffbf;
+        padding: 5px;
+    }
+
+    .titulo-principal {
+        color: #18b18b;
+        font-size: 28px;
+    }
+    .batatismo-lista{
+        display: flex;
+        // flex-direction: column;
+        gap: 12px;
+
+        li{
+            border-radius: 12px;
+            width: fit-content;
+            display:  flex;
+            flex-direction: column;
+            gap: 6px;
+            background-color: #a6d3c8;
+            img{
+                width: 200px;
+            }
+        }
+    }
+}
