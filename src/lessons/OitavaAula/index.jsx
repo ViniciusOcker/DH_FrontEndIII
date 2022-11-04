@@ -45,6 +45,9 @@ export function OitavaAula() {
             picture: fotoProduto
         }
         SetAllProducts([...allProducts,novoProdutoCadastrado]);
+        setNomeProduto('');
+        setPrecoProduto('');
+        setFotoProduto('');
     }
 
     return(
@@ -58,15 +61,15 @@ export function OitavaAula() {
         <form onSubmit={event => cadastrarProduto(event)}>
             <div>
                 <label htmlFor="nomeDoProduto">Nome</label>
-                <input id="nomeDoProduto" type="text" onChange={event => setNomeProduto(event.target.value)}/>
+                <input id="nomeDoProduto" type="text" value={nomeProduto} onChange={event => setNomeProduto(event.target.value)}/>
             </div>
             <div>
                 <label htmlFor="precoProduto">Preço</label>
-                <input id="precoProduto" type="text" onChange={event => setPrecoProduto(event.target.value)}/>
+                <input id="precoProduto" type="text" value={precoProduto} onChange={event => setPrecoProduto(event.target.value)}/>
             </div>
             <div>
                 <label htmlFor="fotoProduto">Foto</label>
-                <input id="fotoProduto" type="text" onChange={event => setFotoProduto(event.target.value)}/>
+                <input id="fotoProduto" type="text" value={fotoProduto} onChange={event => setFotoProduto(event.target.value)}/>
             </div>
             <button type='submit'>Cadastrar Produto</button>
         </form>
