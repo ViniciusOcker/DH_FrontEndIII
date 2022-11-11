@@ -5,7 +5,9 @@ import { SegundaAula } from './lessons/SegundaAula';
 import { SetimaAula } from './lessons/SetimaAula';
 import { TerceiraAula } from './lessons/TerceiraAula';
 import { BatatalhaGames } from './pages/BatatalhaGames';
+import { DecimaTerceiraAula } from './lessons/DecimaTerceiraAula';
 import { Login } from './pages/Login';
+import { DecimaMesaDeTrabalho } from './lessons/DecimaTerceiraAulaMesaDeTrabalho';
 
 function App() {
 
@@ -18,7 +20,9 @@ function App() {
       {/* <QuintaAula /> */}
       {/* <BatatalhaGames /> */}
       {/* <SetimaAula /> */}
-      <OitavaAula />
+      {/* <OitavaAula /> */}
+      {/* <DecimaTerceiraAula /> */}
+      <DecimaMesaDeTrabalho />
     </>
   )
 
