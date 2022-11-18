@@ -8,6 +8,7 @@ import { BatatalhaGames } from './pages/BatatalhaGames';
 import { DecimaTerceiraAula } from './lessons/DecimaTerceiraAula';
 import { Login } from './pages/Login';
 import { DecimaMesaDeTrabalho } from './lessons/DecimaTerceiraAulaMesaDeTrabalho';
+import { DecimaQuintaAula } from './lessons/DecimaQuintaAula';
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
       {/* <SetimaAula /> */}
       {/* <OitavaAula /> */}
       {/* <DecimaTerceiraAula /> */}
-      <DecimaMesaDeTrabalho />
+      {/* <DecimaMesaDeTrabalho /> */}
+      <DecimaQuintaAula />
     </>
   )
 
