@@ -15,61 +15,73 @@ import { MainLayout } from "./components/MainLayout";
 import { Home } from "./pages/Home";
 
 function App() {
-
-  const appRouter = createBrowserRouter([
+    let menuLateral = [
+      {
+        path: '',
+        title: 'Home',
+        element: <Home />
+      },
+      {
+        path: 'aula/segunda',
+        title : 'segunda aula',
+        element: <SegundaAula />
+      },
+      {
+        path: 'aula/terceira',
+        title: 'terceira aula',
+        element: <TerceiraAula />
+      },
+      {
+        path: 'aula/quarta',
+        title: 'quarta aula',
+        element: <QuartaAula />
+      },
+      {
+        path: 'aula/quinta',
+        title: 'quinta aula',
+        element: <QuintaAula />
+      },
+      {
+        path: 'aula/setima',
+        title: 'setima aula',
+        element: <SetimaAula />
+      },
+      {
+        path: 'aula/oitaiva',
+        title: 'oitava aula',
+        element: <OitavaAula />
+      },
+      {
+        path: 'aula/decima/terceira',
+        title: 'decima terceira aula',
+        element: <DecimaTerceiraAula />
+      },
+      {
+        path: 'aula/decima/terceira/mesadetrabalho',
+        title: 'decima terceira aula mesa de trabalho',
+        element: <DecimaMesaDeTrabalho />
+      },
+      {
+        path: 'aula/decima/quinta',
+        title: 'decima quinta aula',
+        element: <DecimaQuintaAula />
+      },
+      {
+        path: 'batatalhagames',
+        title: 'batatalha games',
+        element: <BatatalhaGames />
+      },
+      {
+        path: 'login',
+        title: 'login',
+        element: <Login />
+      }
+  ]
+    const appRouter = createBrowserRouter([
     {
       path: '',
-      element: <MainLayout />,
-      children: [
-        {
-          path: '',
-          element: <Home />
-        },
-        {
-          path: 'aula/segunda',
-          element: <SegundaAula />
-        },
-        {
-          path: 'aula/terceira',
-          element: <TerceiraAula />
-        },
-        {
-          path: 'aula/quarta',
-          element: <QuartaAula />
-        },
-        {
-          path: 'aula/quinta',
-          element: <QuintaAula />
-        },
-        {
-          parth: 'aula/setima',
-          element: <SetimaAula />
-        },
-        {
-          path: 'aula/oitaiva',
-          element: <OitavaAula />
-        },
-        {
-          path: 'aula/decima/terceira',
-          element: <DecimaTerceiraAula />
-        },
-        {
-          path: 'aula/decima/terceira/mesadetrabalho',
-          element: <DecimaMesaDeTrabalho />
-        },
-        {
-          path: 'aula/decima/quinta',
-          element: <DecimaQuintaAula />
-        },
-        {
-          path: 'batatalhagames',
-          element: <BatatalhaGames />
-        },
-        {
-          path: 'login',
-          element: <Login />
-        }
-      ]
+      element: <MainLayout menulateral={menuLateral} />,
+      children: menuLateral
     }
   ]);
 
