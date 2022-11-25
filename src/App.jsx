@@ -13,6 +13,8 @@ import { DecimaMesaDeTrabalho } from './lessons/DecimaTerceiraAulaMesaDeTrabalho
 import { DecimaQuintaAula } from './lessons/DecimaQuintaAula';
 import { MainLayout } from "./components/MainLayout";
 import { Home } from "./pages/Home";
+import { Posts } from "./pages/Posts";
+import { Postagem } from "./pages/Postagem";
 
 function App() {
     let menuLateral = [
@@ -75,6 +77,16 @@ function App() {
         path: 'login',
         title: 'login',
         element: <Login />
+      },
+      {
+        path: 'postagem',
+        title: 'postagem',
+        element: <Posts />,
+      },
+      {
+        path: 'postagem/:id',
+        title: '',
+        element: <Postagem />
       }
   ]
     const appRouter = createBrowserRouter([

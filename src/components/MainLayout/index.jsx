@@ -6,12 +6,17 @@ export function MainLayout(props){
         <div className="main-layout-component">
             <div className='main-layout-barralateral'>
                 {
-                    props.menulateral.map(itens=>
-                        <Link to={'/' + itens.path}>
-                            <li className={Boolean(useMatch('/' + itens.path)) ? 'ativo' : ""}>
-                                {itens.title}
-                            </li>
-                        </Link>)
+                    props.menulateral.map(
+                        (itens,index)=>
+                            (itens.title != "") ?
+                                <Link to={'/' + itens.path} key={index}>
+                                    <li className={Boolean(useMatch('/' + itens.path)) ? 'ativo' : ""}>
+                                        {itens.title}
+                                    </li>
+                                </Link>
+                            :
+                                null
+                    )
                 }
             </div>
             <main className="main-layout-component-main">
