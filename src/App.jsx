@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider} from "react-router-dom"; 
+import { ThemeProvider } from "./hooks/useTheme";
 
 import { OitavaAula } from './lessons/OitavaAula';
 import { QuartaAula } from './lessons/QuartaAula';
@@ -15,6 +16,8 @@ import { MainLayout } from "./components/MainLayout";
 import { Home } from "./pages/Home";
 import { Posts } from "./pages/Posts";
 import { Postagem } from "./pages/Postagem";
+import { Configurations } from "./pages/Configurations";
+import { AccessibilityProvider } from "./hooks/useAccessibility";
 
 function App() {
     let menuLateral = [
@@ -22,6 +25,11 @@ function App() {
         path: '',
         title: 'Home',
         element: <Home />
+      },
+      {
+        path: 'configuration',
+        title: 'Configuração',
+        element: <Configurations />
       },
       {
         path: 'aula/segunda',
@@ -97,7 +105,13 @@ function App() {
     }
   ]);
 
-  return ( <RouterProvider router={appRouter} /> )
+  return (
+    <ThemeProvider>
+      <AccessibilityProvider>
+        <RouterProvider router={appRouter} />
+      </AccessibilityProvider>
+    </ThemeProvider>
+  )
 
 }
 

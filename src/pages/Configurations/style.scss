@@ -1,0 +1,93 @@
+.configurations-component {
+    &.light{
+        h1{
+            color: white;
+        }
+        form {
+            section {
+                label{
+                    color: white;
+                }
+                select {
+                    color: rgb(255, 255, 255);
+                }
+                option {
+                    color: rgb(255, 255, 255);
+                }
+            }
+    
+        }
+    }
+    &.dark{
+        h1{
+            color: white;
+        }
+        form {
+            section {
+                label{
+                    color: white;
+                }
+                select {
+                    color: rgb(255, 255, 255);
+                }
+                option {
+                    color: rgb(255, 255, 255);
+                }
+            }
+    
+        }
+    }
+    &.high-contrast{
+        h1{
+            color: rgb(0, 0, 0);
+        }
+        form {
+            section {
+                label{
+                    color: rgb(0, 0, 0);
+                }
+                select {
+                    color: rgb(0, 0, 0);
+                }
+                option {
+                    color: rgb(0, 0, 0);
+                }
+            }
+    
+        }
+    }
+    &.bigLetter{
+        h1{
+            font-size: 50px;
+        }
+        section{
+            h1{
+                font-size: 40px;
+            }
+            label{
+                font-size: 25px;
+            }
+        }
+    }
+    form {
+
+        section {
+
+            select {
+
+                width: 200px;
+                color: black;
+
+            }
+
+            option {
+
+                color: black;
+
+            }
+
+        }
+
+    }
+
+}

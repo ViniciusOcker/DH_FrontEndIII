@@ -1,0 +1,22 @@
+.HomeComponent{
+    &.light{
+        p{
+            color: white;
+        }
+    }
+    &.dark{
+        p{
+            color: white;
+        }
+    }
+    &.high-contrast{
+        p{
+            color: rgb(0, 0, 0);
+        }
+    }
+    &.bigLetter{
+        p{
+            font-size: 40px;
+        }
+    }
+}
